@@ -1,0 +1,40 @@
+{
+    "name": "madtechservices/madlogos",
+    "description": "A Laravel, Larvel Jetstream and Laravel Nova Package for custom logos and logo properties",
+    "homepage": "https://github.com/madtechservices/madlogos",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "jetstream",
+        "nova",
+        "logo"
+    ],
+    "require": {
+        "php": "^7.3|^8.1",
+        "laravel/nova": "^4.0",
+        "laravel/jetstream": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Madtech\\MadLogos\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Madtech\\MadLogos\\AssetServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
